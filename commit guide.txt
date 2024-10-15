@@ -1,0 +1,14 @@
+Commit Message Guidelines
+Write meaningful commit messages that describe what the change is about.
+
+Common Commit Types:
+
+feat: New feature
+fix: Bug fix
+docs: Documentation changes
+refactor: Code improvement without adding new features
+test: Adding or modifying tests
+chore: Miscellaneous tasks (e.g., updating dependencies)
+Use present tense and keep messages concise.
+
+Example: "Fix login page bug," not "Fixed login page bug."
