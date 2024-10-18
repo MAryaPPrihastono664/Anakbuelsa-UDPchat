@@ -7,21 +7,25 @@ import threading
 
 # Input clientIP and clientPort
 clientIP, clientPort = str, int
-clientIP = input("Input client IP: ")
+# clientIP = input("Input client IP: ")
 clientPort = int(input("Input client Port: "))
+
+# Input serverIP and serverPort
+serverIP, serverPort = str, int
+# serverIP = input("Input server IP: ")
+# serverPort = int(input("Input server Port: "))
+
+
+# Testing IP and Port
+clientIP = "localhost"
+# clientPort = 9000
+serverIP = "localhost"
+serverPort = 8000
+
 
 # Initialize client's socket
 client = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
 client.bind((clientIP, clientPort))
-
-# Input serverIP and serverPort
-serverIP, serverPort = str, int
-serverIP = input("Input server IP: ")
-serverPort = int(input("Input server Port: "))
-
-# uncomment to use localhost
-clientIP = "localhost"
-serverIP = "localhost"
 
 # *** Receive Message ***
 def receive():
