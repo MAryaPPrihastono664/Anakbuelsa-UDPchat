@@ -278,7 +278,10 @@ class client_ui:
         message = self.entry_message.get()
         try:
             if message.strip():  # Only add non-empty messages
-                if self.client.clientUsername == None or self.client.clientChat == None:
+                if (self.client.server_ip == None or self.client.server_port == None 
+                    or self.client.client_ip == None or self.client.client_port == None):
+                    self.display_message(f"not connected")
+                elif self.client.clientUsername == None or self.client.clientChat == None :
                     self.client.echo(message)
                     self.display_message(f"echo | {self.client.clientUsername}: {message}")
                     self.entry_message.delete(0, "end")
@@ -305,7 +308,7 @@ class client_ui:
         self.server_port.config(state="disabled")
 
     def discon_server(self):
-        self.client.set_server(None,None)
+        self.client.stop_server()
         self.server_ip.config(state="normal")
         self.server_port.config(state="normal")
 
