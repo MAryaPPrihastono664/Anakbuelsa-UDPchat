@@ -15,7 +15,7 @@ A brief description of what your project does, its purpose, and its significance
 2. Unzip the UDP chat folder in any folder
 
 ## Install requirements
--python 3.11 or above
+* python 3.11 or above
 
 ## Usage
 ### Server
