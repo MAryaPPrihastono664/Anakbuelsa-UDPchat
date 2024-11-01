@@ -358,12 +358,12 @@ class client_fui:
         if usernameAvailable == "True":
             print(f"Succesfully registered username \"{username}\"!")
             print("Please log in using the username")
-            out = "Please log in using the username"
+            out = "Succesfully registered username \"{username}\"!\nPlease log in using the username"
 
         else:
             print(f"Username \"{username}\" is not available!")
             print("Please reuse /register with a different username")
-            out = "Please register with a different username"
+            out = "Username \"{username}\" is not available!\nPlease register with a different username"
         return out
 
         # DEBUGGING : print User_Respond_Info
@@ -543,6 +543,10 @@ class client_fui:
         self.server_ip = ip
         self.server_port = port
         self.serverAddress = (self.server_ip, int(self.server_port))
+    
+    def stop_server(self):
+        self.server_ip = None
+        self.server_port = None
 
 
 if __name__ == "__main__":
