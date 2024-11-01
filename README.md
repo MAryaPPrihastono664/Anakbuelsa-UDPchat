@@ -11,11 +11,11 @@ A brief description of what your project does, its purpose, and its significance
 
 
 ## Installation
-1.download the zip from release
-2.unzip the UDP chat folder in any folder
+1. Download the zip from release
+2. Unzip the UDP chat folder in any folder
 
 ## Install requirements
-*python 3.11 or above
+-python 3.11 or above
 
 ## Usage
 ### Server
@@ -23,7 +23,7 @@ To use the server functionality, run the "server_ui.py" file. To host the server
 
 ----
 ### Client
-To use the client functionality, run the "client_ui.py" file. To join a server input your ip and port for the application and put ip and port for the server to go connect. Login box parameters are for register, login, logout, and remove account. Chatroom parameters are for join chatroom, create chatroom, and exit chatroom
+To use the client functionality, run the "client_ui.py" file. To join a server input your ip and port for the application and put ip and port for the server to go connect. Login box parameters are for register, login, logout, and remove account. To remove account you must be logged in. Chatroom parameters are for join chatroom, create chatroom, and exit chatroom. You can only enter a chatroom once you are logged in.
 
 ---
 
